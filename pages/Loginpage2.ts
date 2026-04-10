@@ -3,10 +3,10 @@ import {Username_Data, Password_Data, LoginButton_Data} from "../objects/LoginOb
 import { LoginData } from "../Constants/const_data";
 export class LoginPage 
 {
-  readonly page:Page;
-  readonly username : Locator;
-  readonly password : Locator;
-  readonly login_but : Locator;
+  private readonly page:Page;
+  private readonly username : Locator;
+  private readonly password : Locator;
+  private readonly login_but : Locator;
   constructor(page:Page)
   {
     this.page = page;

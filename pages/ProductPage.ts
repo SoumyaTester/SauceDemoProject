@@ -3,10 +3,10 @@ import { add_to_cart_button,back_to_product_but} from "../objects/ProductsPageOb
 import { list_of_products } from "../objects/InventoryObjects";
 
 export class ProductsPage{
-    readonly ATC_but:Locator
-    readonly BTP_but:Locator;
-    readonly page:Page
-    readonly all_products:Locator;
+    private readonly ATC_but:Locator
+    private readonly BTP_but:Locator;
+    private readonly page:Page
+    private readonly all_products:Locator;
     constructor(page:Page)
     {
         this.page=page;

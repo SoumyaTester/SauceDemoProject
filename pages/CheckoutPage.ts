@@ -3,14 +3,14 @@ import { FirstNameField,LastNameField,Continue_button,Cancle_button,Finish_butto
 import { back_to_product_but } from "../objects/ProductsPageObject";
  
 export class Checkout_page{
-    readonly page:Page;
-    readonly First_Name:Locator;
-    readonly Last_Name:Locator;
-    readonly Zip_Field;
-    readonly But_Cancle:Locator;
-    readonly But_Continue:Locator;
-    readonly But_Finish:Locator;
-    readonly BackHome_But:Locator;
+    private readonly page:Page;
+    private readonly First_Name:Locator;
+    private readonly Last_Name:Locator;
+    private readonly Zip_Field;
+    private readonly But_Cancle:Locator;
+    private readonly But_Continue:Locator;
+    private readonly But_Finish:Locator;
+    private readonly BackHome_But:Locator;
     constructor(page:Page)
     {
         this.page=page;

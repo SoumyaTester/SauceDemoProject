@@ -2,13 +2,13 @@ import {Locator, Page} from "@playwright/test"
 import { list_of_products,cart_button,sorting_products,menu_button,products_price,shopping_cart_badge } from "../objects/InventoryObjects";
 export class  InventoryPage
 {
-    readonly page: Page;
-    readonly Product_List : Locator;
-    readonly Cart_but : Locator;
-    readonly Sort_Products : Locator;
-    readonly Menubox : Locator;
-    readonly Price_Products : Locator;
-    readonly Cart_Badge:Locator; 
+    private readonly page: Page;
+    private readonly Product_List : Locator;
+    private readonly Cart_but : Locator;
+    private readonly Sort_Products : Locator;
+    private readonly Menubox : Locator;
+    private readonly Price_Products : Locator;
+    private readonly Cart_Badge:Locator; 
     constructor(page:Page)
     {
        this.page =page; 

@@ -1,11 +1,11 @@
 import { Locator,Page } from "@playwright/test";
 import { Cart_Products_list,continueShopping_but,checkout_but,Cart_removeBut } from "../objects/CartPageObjects";
 export class Cart_Page{
-    readonly page:Page;
-    readonly products_in_Cart:Locator;
-    readonly removeBut_in_Cart:Locator;
-    readonly continueShopping_but_Cart:Locator;
-    readonly checkout_but_Cart:Locator;
+    private readonly page:Page;
+    private readonly products_in_Cart:Locator;
+    private readonly removeBut_in_Cart:Locator;
+    private readonly continueShopping_but_Cart:Locator;
+    private readonly checkout_but_Cart:Locator;
     constructor(page:Page)
     {
         this.page=page;

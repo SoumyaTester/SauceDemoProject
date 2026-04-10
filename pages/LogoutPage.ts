@@ -2,9 +2,9 @@ import {Page, Locator} from "@playwright/test"
 import { logout_link,menu_button } from "../objects/LogoutObjects";
 export class Logout_Page
 {
-    readonly page:Page;
-    readonly menu:Locator;
-    readonly logout:Locator;
+    private readonly page:Page;
+    private readonly menu:Locator;
+    private readonly logout:Locator;
 
     constructor(page:Page)
     {
