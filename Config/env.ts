@@ -4,7 +4,7 @@ import path from 'path';
 if(!process.env.__DOTENV_LOADED)
 {
  dotenv.config({
-   path: path.resolve(process.cwd(), `./config/.env.${process.env.ENV || "dev"}`),
+   path: path.resolve(process.cwd(), `./Config/.env.${process.env.ENV || "dev"}`),
    override: true,
    debug: true
  });
