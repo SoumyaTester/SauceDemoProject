@@ -1,10 +1,11 @@
 import {test,expect} from "../fixtures/dependencyFixtures"
 import {LoginPage} from "../pages/Loginpage2"
+import {ENV} from "../Config/env"
 
 test.use({storageState:undefined});
 test.describe("Login Functionalty",async()=>{
     test.beforeEach(async({page})=>{
-        await page.goto("https://www.saucedemo.com/");
+        await page.goto(ENV.BASE_URL);
     });
 test("Verify the login functionalty with valid credentials",async({page,loginObj})=>{
     await loginObj.Entering_Username();

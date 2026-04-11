@@ -1,6 +1,7 @@
 import { Page,Locator } from "@playwright/test";
 import {Username_Data, Password_Data, LoginButton_Data} from "../objects/LoginObjects"
 import { LoginData } from "../Constants/const_data";
+import { ENV } from "../Config/env";
 export class LoginPage 
 {
   private readonly page:Page;
@@ -16,12 +17,12 @@ export class LoginPage
   }
   async Entering_Username()
   {
-    await this.username.fill(LoginData.lOGIN_USERNAME);
+    await this.username.fill(ENV.USER_NAME);
     return this;
   }
   async Entering_Password()
   {
-    await this.password.fill(LoginData.lOGIN_PASSWORD);
+    await this.password.fill(ENV.PASSWORD);
     return this;
   }
   async Entering_Invalid_Username()

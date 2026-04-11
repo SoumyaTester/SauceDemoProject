@@ -1,0 +1,12 @@
+npm install cross-env ------->  to install cross-env
+npx cross-env ENV=dev playwright test LoginTest.spec.ts --project=chromium --------> Run the test in dev environment
+
+Before adding Scripts in package.josn file then =
+npx cross-env ENV=dev playwright test LoginTest.spec.ts --project=chromium 
+
+
+After adding Scripts in package.josn file then =
+npm run test:dev ------> Run all the tests
+npm run test:dev --LoginTest.spec.ts -------> Run Specific file
+npm run test:dev --LoginTest.spec.ts --headed -----> Headed mode
+npm run test:dev --LoginTest.spec.ts --headed --project=chromium -------> specific Browser
